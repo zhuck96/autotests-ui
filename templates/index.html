@@ -8,17 +8,24 @@
         .input {color: blue}
 
         a { color: green }
+        div.yandex > a[href="https://ya.ru/"]:hover {color:red}
 
         #num_list { color: grey}
 
         button[type="submit"] { color:red }
+
+        form input[placeholder="текст"] { font-size: 100px }
+
+        p::first-line { font-weight: bold;}
+
+
 
     </style>>
 
 
 </head>
 <body>
-<div>
+<div class="habr" id="div_1">
 <h1 class="newnew">test</h1>
 <a href="https://habr.com/ru/companies/ggsel/articles/937498/" target="_blank">test</a>
 <img id="link" src="https://habrastorage.org/r/w1560/getpro/habr/upload_files/b88/c2b/06b/b88c2b06bd6e46abc4eadc82c08db0d3.png"
@@ -43,6 +50,12 @@
      <li>testik 3 </li>
 
 </ol>
+<div class="yandex" id="div_2">
+    <a href="https://ya.ru/" id="yandex_link">Yandex</a>
+    <p>Текст тестовый</p>
+    <p>Текст тестовый ниже</p>
+</div>
+
 
 </body>
 </html>
