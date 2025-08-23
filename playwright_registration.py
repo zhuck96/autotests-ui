@@ -1,5 +1,8 @@
 from playwright.sync_api import sync_playwright, expect
 
+#работа с формой регистрации - ввод имени пользователя, пароля а затем проверка на странице дашборда
+# видимости текста у элемента
+
 with sync_playwright() as playwright:
     browser = playwright.chromium.launch(headless=False)
     context = browser.new_context()
