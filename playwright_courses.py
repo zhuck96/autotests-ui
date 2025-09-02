@@ -24,7 +24,6 @@ with sync_playwright() as playwright:
     registration_button.click()
     context.storage_state(path='result_auth_storage.json')
 
-
     context_new = browser.new_context(storage_state='result_auth_storage.json')
     page_new = context_new.new_page()
     page_new.goto("https://nikita-filonov.github.io/qa-automation-engineer-ui-course/#/courses")
